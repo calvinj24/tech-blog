@@ -1,12 +1,13 @@
-<div class="comments">
+<div class="container border-bottom">
+  <h4>Comments:</h4>
   {{#each this}}
-  <section class="comment">
-    <div class="meta">
-      {{user.username}} on {{format_date created_at}}
-    </div>
-    <div class="text">
-      {{comment_text}}
-    </div>
+    <section class="comment border-bottom">
+      <div class="meta">
+        {{user.username}} on {{format_date created_at}}
+      </div>
+      <div class="text">
+        {{comment_text}}
+      </div>
   </section>
   {{/each}}
 </div>

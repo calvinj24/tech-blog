@@ -1,0 +1,15 @@
+<div class="container mt-3">
+  <div class="post-banner w-100">
+    <h3>{{title}}</h3>
+  </div>
+  <p class="post-meta w-100 border-bottom">
+    Posted by {{user.username}} on {{format_date created_at}}
+    |
+    {{comments.length}} {{format_plural "comment" comments.length}}
+  </p>
+  <p class="border-bottom">
+    {{post_content}}
+  </p>
+</div>
+
+
