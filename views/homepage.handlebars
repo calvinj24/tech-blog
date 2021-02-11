@@ -1,10 +1,14 @@
+<div class="post-banner text-center pt-3 border-bottom">
+  <h2>Latest Posts</h2>
+</div>
 
-<h2>Current Posts</h2>
 
-<ol class="post-list">
-  {{#each posts as |post|}}
-  <li>
-    {{> post-info post }}
-  </li>
-  {{/each}}
-</ol>
+<div class="container mt-3">
+  <div class="post-container d-flex flex-wrap mx-auto w-80">
+    {{#each posts as |post|}}
+
+      {{> post-info post }}
+
+    {{/each}}
+  </div>
+</div>

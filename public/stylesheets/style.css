@@ -1,0 +1,34 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+ol {
+  list-style: none;
+}
+
+.post-link {
+  text-decoration: none;
+}
+
+.brand-logo {
+  font-size: 28px;
+}
+
+.post-card {
+  margin: 3px;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  border-radius: 12px;
+  size: 8px;
+}
+.logout-btn:hover {
+  background: none;
+  color: #212529;
+}
+
+.post-card:hover {
+  background:#198754!important;
+}
