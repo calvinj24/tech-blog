@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper d-flex flex-column">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <li class="nav-item active"></li>
         <a class="navbar-brand brand-logo" href="/">The Tech Blog</a>
@@ -34,11 +34,11 @@
       </ul>
     </nav>
 
-    <main>
+    <main class="h-100 d-flex flex-column">
     {{{ body }}}
     </main>
 
-    <footer>
+    <footer class="fixed-bottom">
       Thanks for visiting!
     </footer>
   </div>
