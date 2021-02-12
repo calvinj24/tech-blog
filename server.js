@@ -35,6 +35,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./controllers/'));
 
-sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+sequelize.query("SET FOREIGN_KEY_CHECKS = 0")
+.then (() => {
+    return sequelize.sync({ force: false })
+})
+.then (() => {
+    return sequelize.query("SET FOREIGN_KEY_CHECKS = 1")
+})
+.then(() => {
+    app.listen(PORT, () => console.log(`Now listening on port ${PORT}.`));
+})
+.catch(err => {
+    console.error('Unable to connect to the database.', err)
 });
