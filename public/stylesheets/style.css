@@ -44,3 +44,11 @@ main {
 .post-sidebar {
   flex:1
 }
+
+.login-row {
+  flex:1
+}
+
+.login-column {
+  height: 100vh;
+}
